@@ -1,0 +1,61 @@
+{
+  "devices": [
+    {
+      "id": "GT1",
+      "model": "gasturbine",
+      "name": "Gas turbine 1",
+      "fuel_A": 2.35,
+      "fuel_B": 0.531,
+      "eta_heat": 0.5,
+      "max_ramp_up": 20,
+      "max_ramp_down": 4,
+      "start_stop": {
+        "delay_start_minutes": 45,
+        "penalty_start": 200,
+        "is_on_init": true,
+        "minimum_time_on_minutes": 600,
+        "minimum_time_off_minutes": 200
+      },
+      "flow_max": 20,
+      "flow_min": 5
+    },
+    {
+      "id": "GT2",
+      "model": "gasturbine",
+      "name": "Gas turbine 1",
+      "fuel_A": 2.351,
+      "fuel_B": 0.532,
+      "eta_heat": 0.5,
+      "max_ramp_up": 20,
+      "max_ramp_down": 4,
+      "start_stop": {
+        "delay_start_minutes": 45,
+        "penalty_start": 200,
+        "is_on_init": true,
+        "minimum_time_on_minutes": 600,
+        "minimum_time_off_minutes": 200
+      },
+      "flow_max": 20,
+      "flow_min": 5
+    },
+    {
+      "id": "GT3",
+      "model": "gasturbine",
+      "name": "Gas turbine 1",
+      "fuel_A": 2.352,
+      "fuel_B": 0.533,
+      "eta_heat": 0.5,
+      "max_ramp_up": 20,
+      "max_ramp_down": 3,
+      "start_stop": {
+        "delay_start_minutes": 45,
+        "penalty_start": 200,
+        "is_on_init": false,
+        "minimum_time_on_minutes": 600,
+        "minimum_time_off_minutes": 200
+      },
+      "flow_max": 20,
+      "flow_min": 5
+    }
+  ]
+}
