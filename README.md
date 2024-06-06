@@ -2,31 +2,19 @@
 
 **Author:** Sondre Ekkje Kaavik  
 **Date:** 04.06.24  
-**Institution:** University of Bergen, Departement of Informatics   
+**Institution:** University of Bergen, Department of Informatics   
 
 ### Description
-The repository contains the energy system for Chapter 4 and the hybrid energy system from Chapter 5.  
+The repository contains the energy system model created for Chapter 4 and the hybrid energy system model from Chapter 5. 
 
 ### Requirements
-List the prerequisites needed to run these notebooks:
-- **Python Version:** Implemented for Python 3.12  
-- **Libraries and Dependencies:** Including these dependencies, one needs a valid Gurobi license or swap solver. The thesis was solved with Gurobi.  
+The thesis was completed using Python 3.12, but older versions should also be supported.
+- **Libraries and Dependencies:** A valid Gurobi license is needed to use the Gurobi solver. We used Gurobi for the backend in Pyomo.  
   ```bash
-  pip install numpy pandas matplotlib plotly pyomo gurobipy scipy requests
+  pip install -r requirements
   ```
-
-### Installation
-Jupyter-notebook is required to run the files.  
-
 ### File Descriptions
-- `data/`: The various data files from LEOGO and Oogeso.  
-- `helper.py`: Various methods for plotting and models. Imported in the other files.  
-- `energy_storage_model.ipynb`: The EMPC implementation with plotting data from chapter 4.  
-- `hybrid_energy_model.ipynb`: The hybrid energy model from chapter 5.  
-- Add additional notebooks as necessary.  
-
-### Usage
-To run the notebooks, write this in your terminal of choice.
-```bash
-jupyter notebook energy_storage_model.ipynb
-```
+- `data/`: Data files from LEOGO, Oogeso and OpenData.  
+- `helper.py`: Models and plotting methods. Also contains the MPC implementations. 
+- `energy_storage_model.ipynb`: To run the energy model from Chapter 4.  
+- `hybrid_energy_model.ipynb`: To run the hybrid energy model from Chapter 5.  
